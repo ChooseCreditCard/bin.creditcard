@@ -4,22 +4,22 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Bin.Creditcard – Bank Identification Numbers (BINs) Explained</title>
-  <meta name="description" content="Understand how Bank Identification Numbers (BINs) classify cards by issuer, network, product type and region. Independent explainer for cardholders, merchants and fintech builders." />
+  <title>Bin.Creditcard – Bank Identification Numbers, Routing & Card Types</title>
+  <meta name="description" content="Educational overview of Bank Identification Numbers (BINs): how the first digits of a credit card number identify the issuer, network, country and product type. Explains routing, risk checks and why BIN ranges matter for payments." />
   <meta name="robots" content="index,follow" />
   <link rel="canonical" href="https://bin.creditcard/" />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Bin.Creditcard – Bank Identification Numbers (BINs) Explained" />
-  <meta property="og:description" content="Learn what BINs reveal about a card’s issuer, network, country and product, and how this data is used for routing, risk and reporting." />
+  <meta property="og:title" content="Bin.Creditcard – Bank Identification Numbers Explained" />
+  <meta property="og:description" content="Learn how credit-card BINs identify issuer, network, region and product type – and how they are used for routing, fraud checks and payment technology." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://bin.creditcard/" />
   <meta property="og:image" content="https://choose.creditcard/preview.png?utm_source=bin.creditcard&utm_medium=referral&utm_campaign=og_image" />
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Bin.Creditcard – Bank Identification Numbers (BINs) Explained" />
-  <meta name="twitter:description" content="Independent explanation of how Bank Identification Numbers (BINs) work, why they matter, and how they are used in modern card payments." />
+  <meta name="twitter:title" content="Bin.Creditcard – Bank Identification Numbers Explained" />
+  <meta name="twitter:description" content="Neutral explainer of how BIN ranges work, how they feed into risk checks and why they matter for modern payment technology." />
   <meta name="twitter:image" content="https://choose.creditcard/preview.png?utm_source=bin.creditcard&utm_medium=referral&utm_campaign=twitter_image" />
 
   <!-- GA4 -->
@@ -34,7 +34,7 @@
   <!-- Tailwind for utility classes -->
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Your shared minisite styles -->
+  <!-- Shared minisite styles -->
   <link rel="stylesheet" href="./styles.css" />
 </head>
 <body class="bg-slate-950 text-slate-100">
@@ -44,13 +44,13 @@
         <div class="cc-logo">CC</div>
         <div class="brand-text">
           <div class="brand-title">Bin.Creditcard</div>
-          <div class="brand-subtitle">Bank Identification Numbers Explained</div>
+          <div class="brand-subtitle">Bank Identification Numbers &amp; Card Routing</div>
         </div>
       </div>
       <nav class="nav-links" aria-label="Page navigation">
         <a href="#overview">Overview</a>
-        <a href="#mechanics">How It Works</a>
-        <a href="#compare">Compare</a>
+        <a href="#structure">How BINs are structured</a>
+        <a href="#risk">Risk &amp; routing</a>
       </nav>
     </div>
   </header>
@@ -66,170 +66,211 @@
     <!-- Hero -->
     <section class="hero">
       <div class="hero-content">
-        <h1>What Bank Identification Numbers Reveal About Your Card</h1>
+        <h1>How Credit-Card BINs Identify Issuers, Networks &amp; Risk</h1>
         <p class="hero-lead">
-          Every payment card starts with a small cluster of digits that quietly describes the issuer, network, product type and region. Bin.Creditcard breaks down how Bank Identification Numbers (BINs) work and how they shape routing, risk checks and fees.
+          The first digits of a card number are not random. Bank Identification Numbers (BINs) reveal which
+          bank issued the card, which network it runs on, what country it belongs to and often what type of
+          product it is. This page explains how BINs fit into modern payment technology.
         </p>
-        <a class="cta" href="https://choose.creditcard/?utm_source=bin.creditcard&utm_medium=referral&utm_campaign=hero_cta">
-          Explore card technology on Choose.Creditcard
-        </a>
+        <div class="flex flex-wrap gap-3 mt-4">
+          <a class="cta" href="https://choose.creditcard/technology/?utm_source=bin.creditcard&utm_medium=referral&utm_campaign=hero_technology">
+            Explore Technology &amp; Payments hub
+          </a>
+          <a class="cta-secondary" href="https://choose.creditcard/?utm_source=bin.creditcard&utm_medium=referral&utm_campaign=hero_choose">
+            Compare cards at Choose.Creditcard
+          </a>
+        </div>
       </div>
     </section>
 
-    <!-- Content sections -->
+    <!-- Overview -->
     <section id="overview" class="section">
-      <h2>What is a Bank Identification Number (BIN)?</h2>
+      <h2>What Is a Bank Identification Number (BIN)?</h2>
       <p>
-        A Bank Identification Number, sometimes called an Issuer Identification Number (IIN), is the sequence of digits at the start of a card number that identifies the payment network and the issuing institution. Historically this was the first six digits; many schemes are now expanding to eight as card volumes grow.
+        A Bank Identification Number is the leading part of a card number that tells the payment network
+        which issuer and product they are dealing with. Historically this was the first 6 digits, but many
+        systems now work with 8-digit BINs as payment volumes and product types have grown.
       </p>
       <p>
-        From those digits alone, payment systems can infer whether a card is debit or credit, consumer or commercial, basic or premium, and which country or region it belongs to. This information is used before the full PAN is even evaluated, making BIN data a critical shortcut in card processing.
+        When a transaction is initiated, the terminal and acquiring bank use the BIN to route the
+        authorisation request to the correct card network and issuing bank. The BIN also signals things like:
       </p>
-    </section>
-
-    <section id="mechanics" class="section">
-      <h2>How BINs Drive Routing and Authorisation</h2>
-      <p>
-        When a card is tapped, dipped or entered online, the terminal packages the card details into an authorisation request. The BIN is read first and determines which network should receive the message, and then which issuer or processor should ultimately approve or decline the transaction.
-      </p>
-      <p>
-        Along the way, acquirers and payment gateways use BIN data to apply correct interchange tables, select routing options, enforce region-based rules and decide whether extra checks such as 3-D Secure or step-up authentication should be triggered. All of this happens in milliseconds based on a handful of digits at the front of the card.
-      </p>
-    </section>
-
-    <section class="section">
-      <h2>BIN Ranges, Card Levels and Product Mapping</h2>
-      <p>
-        Issuers typically control whole ranges of BINs, allocating specific blocks to different portfolios: entry-level cards, premium travel products, corporate cards or co-branded programmes. Each range is registered with the networks so that downstream systems can recognise the product behind the number.
-      </p>
-      <p>
-        For merchants and PSPs, accurate BIN tables help distinguish between domestic and cross-border cards, consumer and commercial usage, or standard and premium tiers. That, in turn, influences surcharging rules, acceptance policies and the economics of each transaction.
+      <ul class="list-disc space-y-2 pl-5 mt-3">
+        <li>Which <strong>network</strong> the card uses (Visa, Mastercard, etc.).</li>
+        <li>Which <strong>issuer</strong> owns the relationship with the cardholder.</li>
+        <li>The typical <strong>country or region</strong> of issuance.</li>
+        <li>Sometimes the <strong>product type</strong> (debit, credit, prepaid, business, premium).</li>
+      </ul>
+      <p class="small mt-3">
+        BINs are part of the behind-the-scenes plumbing that make card payments work. They do not reveal
+        personal information by themselves, but they do tell the system how the card should be treated.
       </p>
     </section>
 
-    <section class="section">
-      <h2>BINs, Fraud Controls and Risk Scoring</h2>
+    <!-- Structure -->
+    <section id="structure" class="section">
+      <h2>How BINs Are Structured on a Card</h2>
       <p>
-        BIN intelligence feeds directly into fraud engines. Certain ranges may be flagged as higher risk due to historical chargebacks, cross-border patterns or association with particular merchant categories. Other ranges might be treated as lower risk because they correspond to strong KYC processes or secure authentication flows.
+        A full card number (PAN – Primary Account Number) contains several pieces of information encoded in
+        sequence. The BIN is the leading block, followed by digits that identify the cardholder account and a
+        final check digit.
       </p>
       <p>
-        Combining BIN data with geolocation, device fingerprints and transaction history allows risk systems to decide whether to approve seamlessly, challenge with additional checks or block outright. For online merchants, keeping BIN tables up to date is one of the simplest ways to improve both approval rates and fraud defences.
+        While the exact structure can vary by network and issuer, a simplified view looks like this:
       </p>
-    </section>
 
-    <section class="section">
-      <h2>Data Quality, Compliance and Privacy</h2>
-      <p>
-        BIN databases are maintained by card schemes and republished through official registries and third-party tools. Because card products evolve, mergers happen and portfolios are re-issued, the underlying data is constantly changing. Out-of-date tables can lead to incorrect routing choices or misclassified fees.
-      </p>
-      <p>
-        At the same time, BIN usage must respect privacy and compliance rules. Processors focus on the structural information — issuer, country, product type — rather than cardholder identity. Good governance around BIN data helps payment providers stay aligned with scheme rules, local regulation and data-minimisation principles.
-      </p>
-    </section>
-
-    <!-- Comparison block -->
-    <section id="compare" class="section">
-      <h2>Comparing BIN Tools and Data Providers</h2>
-      <div class="table-wrap">
+      <div class="table-wrap mt-4">
         <table class="table">
           <thead>
             <tr>
-              <th>Feature</th>
-              <th>What to Look For</th>
-              <th>Why It Matters</th>
+              <th>Segment</th>
+              <th>Typical length</th>
+              <th>Purpose</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>Coverage</td>
-              <td>Support for major schemes, regions and both 6- and 8-digit BINs</td>
-              <td>Broader coverage reduces blind spots when you accept cards globally.</td>
+              <td>BIN / IIN</td>
+              <td>6–8 digits</td>
+              <td>Identifies network, issuer, region and often product type.</td>
             </tr>
             <tr>
-              <td>Update Frequency</td>
-              <td>Clear policy on how often BIN ranges are refreshed</td>
-              <td>Frequent updates keep routing and fee decisions aligned with reality.</td>
+              <td>Account identifier</td>
+              <td>Varies</td>
+              <td>Links the card to a specific customer account at the issuer.</td>
             </tr>
             <tr>
-              <td>Data Fields</td>
-              <td>Issuer name, country, product type, brand level, card type</td>
-              <td>Richer metadata enables more granular risk rules and analytics.</td>
-            </tr>
-            <tr>
-              <td>Integration Options</td>
-              <td>API access, bulk file downloads and dashboard tools</td>
-              <td>Flexible access makes it easier to plug BIN intelligence into your stack.</td>
-            </tr>
-            <tr>
-              <td>Compliance &amp; Support</td>
-              <td>Alignment with scheme registries and responsive support team</td>
-              <td>Reduces the risk of using stale or non-compliant reference data.</td>
+              <td>Check digit</td>
+              <td>1 digit</td>
+              <td>Used by the Luhn algorithm to detect simple input errors.</td>
             </tr>
           </tbody>
         </table>
       </div>
-      <p class="small">
-        For a broader view of how card technology, fees and features interact, visit
-        <a href="https://choose.creditcard/?utm_source=bin.creditcard&utm_medium=referral&utm_campaign=comparison_section">
-          Choose.Creditcard
-        </a>.
+
+      <p class="small mt-3">
+        For most consumers, the exact digits beyond the BIN are not important. For merchants, processors and
+        risk systems, correctly interpreting the BIN is essential.
+      </p>
+    </section>
+
+    <!-- Risk & routing -->
+    <section id="risk" class="section">
+      <h2>How BINs Are Used for Risk Checks &amp; Routing</h2>
+      <p>
+        BIN data feeds into fraud-prevention, pricing and routing decisions long before a transaction is
+        either approved or declined. Typical uses include:
+      </p>
+      <ul class="list-disc space-y-2 pl-5 mt-3">
+        <li><strong>Geographic checks:</strong> comparing card country to IP, device location or merchant region.</li>
+        <li><strong>Product-type checks:</strong> handling debit, credit, prepaid and corporate cards differently.</li>
+        <li><strong>Fee logic:</strong> applying the right interchange and scheme fees for each transaction.</li>
+        <li><strong>Fallback rules:</strong> deciding how to route if one network path is temporarily unavailable.</li>
+      </ul>
+      <p class="mt-3">
+        Modern fraud engines often maintain their own BIN tables, updated when new ranges or product lines are
+        launched. Outdated BIN data can lead to false declines or mispriced transactions.
+      </p>
+    </section>
+
+    <!-- BINs, product types & profiles -->
+    <section class="section">
+      <h2>BINs, Product Types and Customer Profiles</h2>
+      <p>
+        A single issuer can operate many BINs to separate products. One BIN might be used for standard consumer
+        credit cards, another for premium travel cards, another for corporate or small-business products, and
+        yet another for prepaid or virtual-only cards.
+      </p>
+      <p>
+        For card programmes, this separation helps:
+      </p>
+      <ul class="list-disc space-y-2 pl-5 mt-3">
+        <li>Segment <strong>risk and pricing</strong> by product type.</li>
+        <li>Apply different <strong>features and benefits</strong> at the BIN level.</li>
+        <li>Manage <strong>migration</strong> when products are upgraded or closed.</li>
+      </ul>
+      <p class="small mt-3">
+        From a user perspective, this is invisible – but it is part of why cards with different benefits or
+        fees can behave differently in the background, even from the same bank.
+      </p>
+    </section>
+
+    <!-- BINs & modern tech -->
+    <section class="section">
+      <h2>BINs in Modern Payment Technology</h2>
+      <p>
+        As virtual cards, tokenization and wallet-based payments have grown, BINs still sit at the core of the
+        system. Whether a card is stored in a phone wallet, used with wearables, or issued as a single-use
+        virtual number, the underlying BIN usually points back to the same issuer and product family.
+      </p>
+      <p>
+        New BIN ranges have also been introduced to support:
+      </p>
+      <ul class="list-disc space-y-2 pl-5 mt-3">
+        <li><strong>Digital-first issuers</strong> and fintech card programmes.</li>
+        <li><strong>Co-branded cards</strong> with specific merchants or loyalty schemes.</li>
+        <li><strong>Specialised business products</strong> for expenses and virtual cards.</li>
+      </ul>
+      <p class="small mt-3">
+        For a broader view of card technology, see the
+        <a href="https://choose.creditcard/technology/?utm_source=bin.creditcard&utm_medium=referral&utm_campaign=link_technology_hub">
+          Technology &amp; Payments hub
+        </a>
+        on Choose.Creditcard.
       </p>
     </section>
 
     <!-- Cluster links -->
     <section class="section">
-      <h2>Explore Related Payment Technologies</h2>
+      <h2>Explore Related Card-Technology Topics</h2>
       <div class="cluster-grid">
-        <a class="cluster-card" href="https://bitcoinpay.creditcard/?utm_source=cryptopay.creditcard&utm_medium=referral&utm_campaign=cluster_bitcoinpay">
-          <h3>BitcoinPay.Creditcard</h3>
-          <p>Bitcoin card payments and settlement patterns.</p>
+        <a class="cluster-card" href="https://access.creditcard/?utm_source=bin.creditcard&utm_medium=referral&utm_campaign=cluster_access">
+          <h3>Access.Creditcard</h3>
+          <p>Card access control, limits, channels and authentication flows.</p>
         </a>
-        <a class="cluster-card" href="https://btcpay.creditcard/?utm_source=cryptopay.creditcard&utm_medium=referral&utm_campaign=cluster_btcpay">
-          <h3>BTCPay.Creditcard</h3>
-          <p>Merchant-side BTC processing and gateways.</p>
+        <a class="cluster-card" href="https://verify.creditcard/?utm_source=bin.creditcard&utm_medium=referral&utm_campaign=cluster_verify">
+          <h3>Verify.Creditcard</h3>
+          <p>Verification steps around card use, 3-D Secure and risk checks.</p>
         </a>
-        <a class="cluster-card" href="https://tokens.creditcard/?utm_source=cryptopay.creditcard&utm_medium=referral&utm_campaign=cluster_tokens">
-          <h3>Tokens.Creditcard</h3>
-          <p>Tokenized rewards, governance tokens and incentives.</p>
+        <a class="cluster-card" href="https://digitalid.creditcard/?utm_source=bin.creditcard&utm_medium=referral&utm_campaign=cluster_digitalid">
+          <h3>DigitalID.Creditcard</h3>
+          <p>Digital identity, KYC and how it connects to card programmes.</p>
         </a>
-        <a class="cluster-card" href="https://defipay.creditcard/?utm_source=cryptopay.creditcard&utm_medium=referral&utm_campaign=cluster_defipay">
-          <h3>DefiPay.Creditcard</h3>
-          <p>DeFi-linked card products and yield routing.</p>
-        </a>
-        <a class="cluster-card" href="https://virtualpay.creditcard/?utm_source=cryptopay.creditcard&utm_medium=referral&utm_campaign=cluster_virtualpay">
-          <h3>VirtualPay.Creditcard</h3>
-          <p>Virtual cards and wallet-based payment flows.</p>
+        <a class="cluster-card" href="https://card.creditcard/?utm_source=bin.creditcard&utm_medium=referral&utm_campaign=cluster_card">
+          <h3>Card.Creditcard</h3>
+          <p>High-level explainer of how card numbers, expiry and CVV fit together.</p>
         </a>
       </div>
     </section>
 
-    <!-- Collection section -->
+    <!-- Collection / Hub snippet -->
     <section class="section">
       <h2>Part of The CreditCard Collection</h2>
       <p class="small">
-        Bin.Creditcard is one spoke in <strong>The CreditCard Collection</strong> — a network of focused microsites operated by ronarn AS. Each site explains a single piece of card or payment infrastructure in plain language and then connects you to independent comparison tools.
+        Bin.Creditcard is part of <strong>The CreditCard Collection</strong> — a network of focused minisites by
+        ronarn AS. Each site explains one component of the card ecosystem in neutral, technical language and
+        then connects you to the main comparison framework on Choose.Creditcard.
       </p>
       <p class="small">
-        We do not issue cards or sell BIN data. We summarise documentation, highlight trade-offs and point you toward external providers where you can review the full technical details and terms yourself.
-      </p>
-      <p class="small">
-        This site is informational only and does not provide financial, legal or tax advice. Always consult official documentation and consider seeking independent advice where appropriate.
+        This page is <strong>informational only</strong>. It does not recommend specific cards, banks or
+        processors, and it does not replace compliance, legal or scheme documentation.
       </p>
 
-      <!-- Technology hub snippet -->
-      <div class="hub-link">
+      <div class="hub-link mt-4">
         <a href="https://choose.creditcard/technology/?utm_source=bin.creditcard&utm_medium=referral&utm_campaign=minisite_to_hub"
-           class="text-sm text-slate-600 hover:text-slate-900">
-          Learn more at the Technology hub
+           class="text-sm text-slate-300 hover:text-slate-50">
+          Learn more in the Technology &amp; Payments hub on Choose.Creditcard
         </a>
       </div>
     </section>
 
     <!-- Bottom CTA -->
     <section class="section">
-      <h2>Ready to Go Deeper Into Card Infrastructure?</h2>
+      <h2>Ready to See Technology in Real Card Products?</h2>
       <p class="small">
-        Use Bin.Creditcard to understand the role of BINs in modern payments — then continue to the main hub to explore how networks, fees, rewards and protections fit together across different card products.
+        Use Bin.Creditcard to understand how BINs fit into routing and risk. When you want to look at
+        real-world card offers, move over to the main comparison hub and technology sub-pages to see how
+        different products implement these ideas.
       </p>
       <a class="cta" href="https://choose.creditcard/?utm_source=bin.creditcard&utm_medium=referral&utm_campaign=bottom_cta">
         Go to Choose.Creditcard
